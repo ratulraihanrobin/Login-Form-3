@@ -6,9 +6,8 @@
 }
 
 body{
-    
+    display: grid;
     height: 100%;
-    
     background-color: #1abc9c;
     
 }
@@ -16,10 +15,11 @@ body{
 .container{
     width: 380px;
     background-color: #fff;
-    border-radius: 5px;
-    
-    
-    
+    border-radius: 5px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .title{
@@ -30,4 +30,59 @@ body{
     color: #fff;
     font-size: 25px;
     font-weight: 600;
+} 
+
+.container form{
+    padding: 30px 20px 25px 20px;
+    
+}
+
+.container form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.container form .row input{
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    font-size: 16px;
+    font-weight: bolder;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+
+}
+
+.container form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 5px 0 0 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.container form .button input{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    padding-left: 0%;
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    transition: 0.1s;
+}
+
+.container form .button input:hover{
+    color: black;
+    background-color: #11be9c;
 }
